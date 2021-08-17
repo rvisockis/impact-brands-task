@@ -1,13 +1,144 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.header-logo {
+    flex-grow: 1;
+}
+
+.header-menu-item {
+    display: block;
+}
+
+.header-menu-icon {
+    display: none !important;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu.active {
+    display: block;
+}
+
+.MuiTypography-displayBlock {
+    text-align: center;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 400px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 48px;
+    background: #e6e6e6;
+    color: #8c8c8c;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+    width: 16px !important;
+    height: 16px !important;
+    background: #fff !important;
+    border-style: solid !important;
+    border-width: 1px !important;
+    border-color: #a4a4a4 !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #707070 !important;
+}
+
+.main-container {
+    padding-top: 24px;
+}
+
+.product .MuiButtonBase-root {
+    background-color: #e6e6e6;
+}
+
+.product .product-title {
+    text-align: center;
+}
+
+.product .product-image {
+    height: 320px;
+    width: 240px;
+    margin: 0 auto;
+    background-size: 120px;
+}
+
+#show-more-btn {
+    margin: 12px auto;
+}
+
+.section-title {
+    text-align: center;
+    padding: 42px 0;
+}
+
+.faq {
+
+}
+
+.footer {
+    display: block;
+    position: relative;
+    padding: 6px 0;
+    margin-top: 82px;
+    background-color: #e6e6e6;
+}
+
+.footer-title {
+    text-align: center;
+    color: #8c8c8c;
+}
+
+@media only screen and (min-width: 401px) {
+    .mobile-menu {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .header-menu-icon {
+        display: block !important;
+    }
+
+    .header-menu-item {
+        display: none !important;
+    }
 }
